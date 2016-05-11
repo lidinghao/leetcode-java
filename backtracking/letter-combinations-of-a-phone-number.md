@@ -16,8 +16,68 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 然后我们制定规则来DFS搜索这棵树，并注意保存状态，即从根节点到当前节点的路径，当满足条件时（到达叶子节点时），再回溯到上一个节点，重新选择路径来搜索。
 采用组合时，可以采用incremental的方式来构建组合，即首先构建一个空集，然后构建包含digitals[0]对于letters的组合，然后在构建包含digitals[0]，digitals[1]对于letters的组合。同78.Subsets的解法类似。
 ## 代码实现
+**回溯**
+```java
+    public Map<Integer, List<Character>> buildMap() {
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        Map<Integer, List<Character>> map = new HashMap<>();
+        for (int i = 2,j = 0; i <= 9&&j< 26; i++) {
+            List<Character> list = new ArrayList<>();
+            list.add(alphabet.charAt(j++));
+            list.add(alphabet.charAt(j++));
+            list.add(alphabet.charAt(j++));
+            if (i == 7 || i == 9) {
+                list.add(alphabet.charAt(j++));
+            }
+            map.put(i, list);
+
+        }
+        return map;
+    }
+    public List<String> letterCombinations(String digits) {
+        List<String> result = new ArrayList<>();
+        Map<Integer, List<Character>> map = buildMap();
+        if (digits.length()==0) {
+            result.add("");
+        }
+        combine(digits,0,"",result, map);
+        return result;
+
+
+    }
+
+    public void combine(String digits, int index, String prefix, List<String> result, Map<Integer, List<Character>> map){
+        if (index ==digits.length()){
+            result.add(prefix);
+            return;
+        };
+        List<Character> chars = map.get(Character.getNumericValue(digits.charAt(index)));
+        for (Character ch : chars) {
+            combine(digits, index+1, prefix+ch, result, map);
+        }
+    }
+```
+
+**组合**
 
 ```java
+    public List<String> letterCombinationsV2(String digits) {
+        String digitletter[] = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+        List<String> result = new ArrayList<>();
+        if (digits.length() == 0) return result;
+        result.add("");
+        for (int i = 0; i < digits.length(); i++) {
+            char[] chars = digitletter[digits.charAt(i) - '0'].toCharArray();
+            List<String> temp = new ArrayList<>();
+            for (String s : result) {
+                for (char ch : chars) {
+                    temp.add(s + ch);
+                }
+            }
+            result = temp;
+        }
+        return result;
+    }
 ```
 
 
