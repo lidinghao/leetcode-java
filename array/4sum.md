@@ -20,4 +20,50 @@ k-sum问题都可以通过双指针左右夹逼来解决，一般步骤是，先
 
 由于数组经过排序，也可以采用剪枝的方式，首先在最外面层循环中去掉太大或太小的数，再把它转为3Sum,再剪枝，再转为2Sum。
 
-## 
+## 代码实现
+cache版
+```java
+public class FourSum {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        Arrays.sort(nums);
+        Map<Integer, List<int[]>> cache = new HashMap<>();
+        for (int i = 0; i < nums.length - 1; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                int sum = nums[i] + nums[j];
+                if (cache.containsKey(sum)) {
+                    List<int[]> list = cache.get(sum);
+                    list.add(new int[]{i, j});
+                } else {
+                    List<int[]> list = new ArrayList<>();
+                    list.add(new int[]{i, j});
+                    cache.put(sum, list);
+                }
+            }
+        }
+        Set<String> used = new HashSet<>();
+        List<List<Integer>> result = new ArrayList<>();
+        for (int i = 0; i < nums.length - 3; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            for (int j = i + 1; j < nums.length - 2; j++) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) continue;
+                int key = target - nums[i] - nums[j];
+                if (!cache.containsKey(key)) {
+                    continue;
+                }
+                for (int[] ints : cache.get(key)) {
+                    if (j >= ints[0]) continue;
+                    Integer[] solution = {nums[i], nums[j], nums[ints[0]], nums[ints[1]]};
+                    if (!used.contains(Arrays.toString(solution))) {
+                        used.add(Arrays.toString(solution));
+                        List<Integer> list = new ArrayList<>(Arrays.asList(solution));
+
+                        result.add(list);
+
+                    }
+
+                }
+            }
+        }
+        return result;
+    }
+```
