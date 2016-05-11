@@ -8,6 +8,5 @@
 * [分支限界](fen_zhi_xian_jie.md)
 * [分治](fen_zhi.md)
 * [贪心](tan_xin.md)
-* [18. 4Sum](backtracking/4sum.md)
 * [栈和队列](stack-queue/README.md)
 
