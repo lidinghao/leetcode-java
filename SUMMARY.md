@@ -10,4 +10,5 @@
 * [贪心](tan_xin.md)
 * [栈和队列](stack-queue/README.md)
    * [Valid Parentheses](stack-queue/valid_parentheses.md)
+* 链表
 
