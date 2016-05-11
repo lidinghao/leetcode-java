@@ -30,7 +30,6 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
                 list.add(alphabet.charAt(j++));
             }
             map.put(i, list);
-
         }
         return map;
     }
@@ -42,8 +41,6 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
         }
         combine(digits,0,"",result, map);
         return result;
-
-
     }
 
     public void combine(String digits, int index, String prefix, List<String> result, Map<Integer, List<Character>> map){
