@@ -9,4 +9,5 @@
 * [分治](fen_zhi.md)
 * [贪心](tan_xin.md)
 * [栈和队列](stack-queue/README.md)
+ * [20. Valid Parentheses]()
 
