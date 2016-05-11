@@ -1,3 +1,5 @@
 # Leetcode题解(JAVA版)
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+## 在线或下载阅读
+https://www.gitbook.com/book/lidinghao/leetcode-java
+
