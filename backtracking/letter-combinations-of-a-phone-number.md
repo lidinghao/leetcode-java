@@ -10,5 +10,7 @@ A mapping of digit to letters (just like on the telephone buttons) is given belo
 Input:Digit string "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 ```
-
+## 分析
+可以采用两种方式来分析思考本题，一种是回溯，一种是组合。
+采用
 
