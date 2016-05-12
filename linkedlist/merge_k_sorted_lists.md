@@ -5,8 +5,8 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 这个归并排序的第二个步骤是一样的，对k个链表进行两两归并，然后在对产生的k/2个链表再进行两两归并，直到最终归并到一个链表。时间复杂度为(nlgk),n为链表的最大长度
 或者维护一个k大小的小根堆，不断地取走堆顶元素，并将该元素的next节点插入堆中，直至堆为空，即所有链表都遍历完。时间复杂度为(nlgk),n为链表的最大长度。
 ## 代码实现
-**递归两两归并版**
 
+**递归两两归并版**
 ```java
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) return null;
