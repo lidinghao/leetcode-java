@@ -6,7 +6,7 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 或者维护一个k大小的小根堆，不断地取走堆顶元素，并将该元素的next节点插入堆中，直至堆为空，即所有链表都遍历完。时间复杂度为(nlgk),n为链表的最大长度。
 ## 代码实现
 
-**递归两两归并版**
+**递归两两归并版**,比小根堆效率更高
 ```java
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) return null;
