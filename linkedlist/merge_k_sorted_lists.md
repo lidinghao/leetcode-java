@@ -42,3 +42,7 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
         return head.next;
     }
 ```
+
+**最小堆版**
+```
+```
