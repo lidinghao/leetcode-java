@@ -13,6 +13,6 @@
    * [Valid Parentheses](stack-queue/valid_parentheses.md)
 * [链表](linkedlist/README.md)
    * [Merge Two Sorted Lists](linkedlist/merge_two_sorted_lists.md)
-   * Merge k Sorted Lists
+   * [Merge k Sorted Lists](linkedlist/merge_k_sorted_lists.md)
 * [位运算](bitwise-manipulation/README.md)
 
