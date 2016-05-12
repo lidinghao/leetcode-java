@@ -45,4 +45,37 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 
 **最小堆版**
 ```
+public ListNode mergeKListsV2(ListNode[] lists) {
+        if (lists.length == 0) {
+            return null;
+        }
+        PriorityQueue<ListNode> minHeap = new PriorityQueue<>(lists.length, 
+        new Comparator<ListNode>() {
+            @Override
+            public int compare(ListNode o1, ListNode o2) {
+                if (o1.val < o2.val) {
+                    return  -1;
+                } else if (o1.val == o2.val) {
+                    return 0;
+                } else {
+                    return 1;
+                }
+            }
+        });
+
+        for (ListNode list : lists) {
+            if (list != null) {
+                minHeap.add(list);
+            }
+        }
+        ListNode head = new ListNode(-1);
+        ListNode tail = head;
+        while (!minHeap.isEmpty()) {
+            tail.next = minHeap.poll();
+            tail = tail.next;
+            if (tail.next != null)
+            minHeap.add(tail.next);
+        }
+        return head.next;
+    }
 ```
