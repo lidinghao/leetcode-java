@@ -18,6 +18,9 @@ For k = 3, you should return: 3->2->1->4->5
 ## 分析
 有递归和迭代两种解法，递归解法每次反转k个节点的子链表，返回新子链表的头部，递归是从后向前进行的，迭代是从前向后进行的。
 ## 代码实现
+
+**迭代版**
+```java
    public ListNode reverseKGroup(ListNode head, int k) {
         if (head ==null || head.next == null || k < 2) return head;
         ListNode dummy = new ListNode(-1);
@@ -49,6 +52,7 @@ For k = 3, you should return: 3->2->1->4->5
         prev.next = end;
         return begin;
     }
+```
 ## 扩展
 这种题目，考察的主要是控制结构，这样在复杂的控制流程中写出正确，清晰的代码。
 最主要的是要把控制流程的代码和正常的业务逻辑代码分开。首先要通过函数把不同的逻辑分开，其次要在代码中，把复杂的控制逻辑写在for中，而不是用while把业务逻辑和控制逻辑写在一起。
