@@ -4,7 +4,7 @@
 * [数组](array/README.md)
    * [4Sum](array/4sum.md)
    * [Remove Duplicates from Sorted Array](array/remove_duplicates_from_sorted_array.md)
-   * Remove Element
+   * [Remove Element](array/remove_element.md)
 * [回溯](backtracking/README.md)
    * [Letter Combinations of a Phone Number](backtracking/letter-combinations-of-a-phone-number.md)
    * [Generate Parentheses](backtracking/generate_parentheses.md)
