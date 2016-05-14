@@ -15,5 +15,6 @@
    * [Merge Two Sorted Lists](linkedlist/merge_two_sorted_lists.md)
    * [Merge k Sorted Lists](linkedlist/merge_k_sorted_lists.md)
    * [Swap Nodes in Pairs](linkedlist/swap_nodes_in_pairs.md)
+   * Reverse Nodes in k-Group
 * [位运算](bitwise-manipulation/README.md)
 
