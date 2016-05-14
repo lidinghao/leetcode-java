@@ -11,3 +11,16 @@ Your function should return length = 2, with the first two elements of nums bein
 
 ## 分析
 ## 代码实现
+```java
+    public int removeDuplicates(int[] nums) {
+        if (nums.length == 0) return 0;
+        int id = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i]!=nums[id-1]) {
+                nums[id++] = nums[i];
+            }
+        }
+        return id;
+
+    }
+```
