@@ -1,7 +1,7 @@
 # Swap Nodes in Pairs
 
 ##分析 
-同反转链表等题目一样，仔细分析，设置好指针的交换顺序。
+同反转链表等题目一样，仔细分析，设置好指针的交换顺序。这种题目一般都会有递归和迭代两种解法。
 ## 代码实现
 ```java
     public ListNode swapPairs(ListNode head) {
