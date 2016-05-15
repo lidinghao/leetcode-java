@@ -23,4 +23,5 @@
 * [字符串](string/README.md)
    * [Implement strStr()](string/implement_strstr.md)
    * [Substring with Concatenation of All Words](string/substring_with_concatenation_of_all_words.md)
+* 细节实现
 
