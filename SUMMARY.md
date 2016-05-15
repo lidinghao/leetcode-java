@@ -22,4 +22,5 @@
    * [Divide Two Integers](bitwise-manipulation/divide_two_integers.md)
 * [字符串](string/README.md)
    * [Implement strStr()](string/implement_strstr.md)
+   * Substring with Concatenation of All Words
 
