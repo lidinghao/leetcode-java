@@ -1,7 +1,7 @@
 # Next Permutation
 ## 分析
 主要是分析并发现数字中的规律。
-g![pic](https://www.nayuki.io/res/next-lexicographical-permutation-algorithm/next-permutation-algorithm.png)
+![pic](https://www.nayuki.io/res/next-lexicographical-permutation-algorithm/next-permutation-algorithm.png)
 ## 代码实现
 ```java
     public void nextPermutation(int[] nums) {
