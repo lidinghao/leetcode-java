@@ -19,6 +19,7 @@
    * [Swap Nodes in Pairs](linkedlist/swap_nodes_in_pairs.md)
    * [Reverse Nodes in k-Group](linkedlist/reverse_nodes_in_k-group.md)
 * [位运算](bitwise-manipulation/README.md)
+   *  Divide Two Integers
 * [字符串](string/README.md)
    * [Implement strStr()](string/implement_strstr.md)
 
