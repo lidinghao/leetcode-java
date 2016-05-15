@@ -9,3 +9,5 @@ words: ["foo", "bar"]
 You should return the indices: [0,9].
 (order does not matter).
 ## 分析
+设置一个words.length * wordLen长度的滑动窗口，将窗口从左向右滑动，并将窗口再划分为长度为wordlen的块，依次检查每个块是否包含在words中，并且出现次数也是符合要求的。
+## 代码实现
