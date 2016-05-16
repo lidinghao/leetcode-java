@@ -13,7 +13,7 @@
 * [贪心](tan_xin.md)
 * [栈和队列](stack-queue/README.md)
    * [Valid Parentheses](stack-queue/valid_parentheses.md)
-   * Longest Valid Parentheses
+   * [Longest Valid Parentheses](stack-queue/longest_valid_parentheses.md)
 * [链表](linkedlist/README.md)
    * [Merge Two Sorted Lists](linkedlist/merge_two_sorted_lists.md)
    * [Merge k Sorted Lists](linkedlist/merge_k_sorted_lists.md)
