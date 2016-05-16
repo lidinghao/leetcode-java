@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * LongestValidParentheses  
 * [数组](array/README.md)
    * [4Sum](array/4sum.md)
    * [Remove Duplicates from Sorted Array](array/remove_duplicates_from_sorted_array.md)
