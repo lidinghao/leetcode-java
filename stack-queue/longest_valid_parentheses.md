@@ -6,3 +6,5 @@ Given a string containing just the characters '(' and ')', find the length of th
 For "(()", the longest valid parentheses substring is "()", which has length = 2.
 
 Another example is ")()())", where the longest valid parentheses substring is "()()", which has length = 4.
+
+## 分析
