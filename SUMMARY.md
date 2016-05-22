@@ -10,7 +10,7 @@
    * [Generate Parentheses](backtracking/generate_parentheses.md)
 * [分支限界](fen_zhi_xian_jie.md)
 * [分治](divide-conquer/README.md)
-   * Search in Rotated Sorted Array
+   * [Search in Rotated Sorted Array](divide-conquer/search_in_rotated_sorted_array.md)
 * [贪心](tan_xin.md)
 * [栈和队列](stack-queue/README.md)
    * [Valid Parentheses](stack-queue/valid_parentheses.md)
