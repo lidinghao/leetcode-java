@@ -9,7 +9,7 @@
    * [Letter Combinations of a Phone Number](backtracking/letter-combinations-of-a-phone-number.md)
    * [Generate Parentheses](backtracking/generate_parentheses.md)
 * [分支限界](fen_zhi_xian_jie.md)
-* [分治](divide-conquer.md)
+* [分治](divide-conquer\README.md)
 * [贪心](tan_xin.md)
 * [栈和队列](stack-queue/README.md)
    * [Valid Parentheses](stack-queue/valid_parentheses.md)
