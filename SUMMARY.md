@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [介绍](introduction.md)
 * [数组](array/README.md)
    * [4Sum](array/4sum.md)
    * [Remove Duplicates from Sorted Array](array/remove_duplicates_from_sorted_array.md)
@@ -31,5 +32,4 @@
 * [大数据算法](bigdata/README.md)
    * [topK](bigdata/topk.md)
    * [外排序](bigdata/out-of-core-sort.md)
-* [介绍](introduction.md)
 
