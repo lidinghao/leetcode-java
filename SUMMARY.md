@@ -12,7 +12,7 @@
    * [Swap Nodes in Pairs](linkedlist/swap_nodes_in_pairs.md)
    * [Reverse Nodes in k-Group](linkedlist/reverse_nodes_in_k-group.md)
 * [查找](search/README.md)
-   * Search in Rotated Sorted Array
+   * [Search in Rotated Sorted Array](search/search_in_rotated_sorted_array.md)
 * [栈和队列](stack-queue/README.md)
    * [Valid Parentheses](stack-queue/valid_parentheses.md)
    * [Longest Valid Parentheses](stack-queue/longest_valid_parentheses.md)
