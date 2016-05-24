@@ -22,7 +22,7 @@
 * [回溯](backtracking/README.md)
    * [Letter Combinations of a Phone Number](backtracking/letter-combinations-of-a-phone-number.md)
    * [Generate Parentheses](backtracking/generate_parentheses.md)
-* [分治](divide-conquer/README.md)
+* [查找](divide-conquer/README.md)
    * [Search in Rotated Sorted Array](divide-conquer/search_in_rotated_sorted_array.md)
    * [Search for a Range](divide-conquer/search_for_a_range.md)
 * [细节实现](details.md)
