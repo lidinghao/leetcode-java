@@ -16,5 +16,27 @@ You may assume no duplicate exists in the array.
 2. 如果pivot在左边区间，则右边是有序的，通过target > A[mid] && target <= A[hi] 判断target的是否在右分区，如果是则lo= mid + 1,如果不是，则hi = mid -1;
 可见，该方法和二分搜索是类似的，只不过判断target是在左分区还是在右分区，需要根据pivot是否在左边做特殊处理。
 ## 代码实现
-
+```java
+public int search(int[] nums, int target) {
+        int lo = 0, hi = nums.length -1;
+        while (lo <= hi) {
+            int mid = (lo + hi) / 2;
+            if (target == nums[mid]) return mid;
+            if (nums[lo] <= nums[mid]) {
+                if (target >= nums[lo] && target < nums[mid]) {
+                    hi = mid - 1;
+                } else {
+                    lo = mid + 1;
+                }
+            } else {
+                if (target > nums[mid] && target <= nums[hi]) {
+                    lo = mid + 1;
+                } else {
+                    hi = mid - 1;
+                }
+            }
+        }
+      return -1;
+    }
+```
 
