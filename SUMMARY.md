@@ -11,6 +11,7 @@
    * [Merge k Sorted Lists](linkedlist/merge_k_sorted_lists.md)
    * [Swap Nodes in Pairs](linkedlist/swap_nodes_in_pairs.md)
    * [Reverse Nodes in k-Group](linkedlist/reverse_nodes_in_k-group.md)
+* 查找
 * [栈和队列](stack-queue/README.md)
    * [Valid Parentheses](stack-queue/valid_parentheses.md)
    * [Longest Valid Parentheses](stack-queue/longest_valid_parentheses.md)
@@ -30,5 +31,4 @@
 * [大数据算法](bigdata/README.md)
    * [topK](bigdata/topk.md)
    * [外排序](bigdata/out-of-core-sort.md)
-* 查找
 
