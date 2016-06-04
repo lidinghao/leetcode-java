@@ -45,6 +45,18 @@ public int[] searchRange(int[] nums, int target) {
 前一种写法在low 和high 都比较大时会造成 low + high 大于Integer.MAX_VALUE,从而溢出。
 
 **关于二分搜索low 和 high指针移动的问题**
+1. 搜索特定值
+        while (lo < hi) {
+            int mid = (lo + hi) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] < target) {
+                lo = mid + 1;
+            } else {
+                hi = mid -1;
+            }
+        }
+
 
 
 
