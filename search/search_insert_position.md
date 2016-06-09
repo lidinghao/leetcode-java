@@ -13,3 +13,19 @@ Here are few examples.
 
 ## 分析
 和search for a range 的解答类似，都是基于二分搜索的变形。对于这类问题，都可以在二分搜索的基础上，对于不同的情形采用不同的判断条件和不同的移动方式，从而得到适合问题的解法。
+
+## 代码实现
+```java
+        if (target > nums[nums.length -1]) return nums.length;
+         int lo= 0, hi = nums.length - 1;
+         while (lo < hi) {
+            int mid = (lo + hi) / 2 ;
+            if (nums[mid] >= target) {
+                hi = mid;
+            } else {
+                lo = mid + 1;
+            }
+         }
+        return  lo ;
+
+```
