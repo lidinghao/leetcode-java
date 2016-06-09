@@ -14,7 +14,7 @@
 * [查找](search/README.md)
    * [Search in Rotated Sorted Array](search/search_in_rotated_sorted_array.md)
    * [Search for a Range](search/search_for_a_range.md)
-   * Search Insert Position
+   * [Search Insert Position](search/search_insert_position.md)
 * [栈和队列](stack-queue/README.md)
    * [Valid Parentheses](stack-queue/valid_parentheses.md)
    * [Longest Valid Parentheses](stack-queue/longest_valid_parentheses.md)
