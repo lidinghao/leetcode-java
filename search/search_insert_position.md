@@ -30,3 +30,4 @@ Here are few examples.
 
 ```
 ## 扩展
+[1,3,5,6], 7 → 4 和[1,3,5,6], 0 → 0 这两个corner case决定了必须使用 >=的判断条件，并对target >nums[nums.length -1]的情况做特殊处理。
