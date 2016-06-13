@@ -6,7 +6,7 @@
    * [4Sum](array/4sum.md)
    * [Remove Duplicates from Sorted Array](array/remove_duplicates_from_sorted_array.md)
    * [Remove Element](array/remove_element.md)
-   * Valid Sudoku
+   * [Valid Sudoku](array/valid_sudoku.md)
 * [链表](linkedlist/README.md)
    * [Merge Two Sorted Lists](linkedlist/merge_two_sorted_lists.md)
    * [Merge k Sorted Lists](linkedlist/merge_k_sorted_lists.md)
