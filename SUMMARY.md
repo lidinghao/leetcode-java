@@ -27,7 +27,7 @@
 * [回溯](backtracking/README.md)
    * [Letter Combinations of a Phone Number](backtracking/letter-combinations-of-a-phone-number.md)
    * [Generate Parentheses](backtracking/generate_parentheses.md)
-   * Sudoku Solver
+   * [Sudoku Solver](backtracking/sudoku_solver.md)
 * [细节实现](details.md)
 * [分支限界](fen_zhi_xian_jie.md)
 * [贪心](tan_xin.md)
